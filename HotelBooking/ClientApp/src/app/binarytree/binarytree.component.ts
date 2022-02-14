@@ -5,7 +5,6 @@ import { BinaryEvaluationResponse, nptr } from './binarytree.model';
 @Component({
   selector: 'app-binarytree',
   templateUrl: './binarytree.component.html',
-  styleUrls: ['./binarytree.component.css']
 })
 export class BinarytreeComponent implements OnInit {
 
