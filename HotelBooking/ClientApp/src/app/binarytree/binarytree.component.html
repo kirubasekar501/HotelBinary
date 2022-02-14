@@ -1,0 +1,26 @@
+<div>
+  <h6>Binary Tree Evaluation:</h6>
+  <div class="master-div">
+    <div class="floor-div">
+      <label class="input-label">Enter Expression</label>
+      <input  style="width:500px"  class="input-field" id="inputExpression" type="text" />
+      <button (click)="evaluate()" class="input-button">Evaluate</button>
+      <label class="result-label">Result: {{this.result}} </label>
+    </div>
+  </div>
+  <div class="master-div">
+    <div class="floor-div">
+      <label class="result-label">Pre-Order Representation: {{this.preOrderRepresentation}} </label>
+    </div>
+  </div>
+  <div class="master-div">
+    <div class="floor-div">
+      <label class="result-label">Post Order Representation: {{this.postOrderRepresentation}} </label>
+    </div>
+  </div>
+  <div class="master-div">
+    <div class="floor-div">
+      <label class="result-label">InOrder Representation: {{this.inOrderRepresentation}} </label>
+    </div>
+  </div>
+</div>
