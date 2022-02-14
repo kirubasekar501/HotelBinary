@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.master-div {
+  margin-top: 15px;
+}
+
+.floor-div {
+    display:flex;
+}
+.floor-label {
+  margin-top: 5px;
+  font-weight:bolder;
+  color:blue;
+}
+.room-button {
+  margin-left: 10px;
+  border: solid;
+  height: 40px;
+  width: 40px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.room-status-a {
+  margin-left: 10px;
+  border: solid;
+  height: 40px;
+  width: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  background: #09ef09;
+}
+.room-status-o {
+  margin-left: 10px;
+  border: solid;
+  height: 40px;
+  width: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  background: red;
+}
+.room-status-v {
+  margin-left: 10px;
+  border: solid;
+  height: 40px;
+  width: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  background: orange;
+}
+.room-status-r {
+  margin-left: 10px;
+  border: solid;
+  height: 40px;
+  width: 40px;
+  font-weight: bolder;
+  font-size: larger;
+  background: grey;
+}
+
+.hotel-div {
+  margin-top: 10px
+}
+
+.action-button {
+  background: #0dcaf045;
+}
+.result-label {
+  margin-left: 30px;
+  font-weight: bolder;
+  color: blue;
+  margin-top: 5px;
+}
+
+.input-label {
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.input-field {
+  margin-left: 30px;
+}
+
+.input-button {
+  margin-left: 30px;
+  background: #0dcaf045;
+}
