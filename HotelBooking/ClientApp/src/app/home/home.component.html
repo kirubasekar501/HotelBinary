@@ -1,0 +1,65 @@
+<div>
+  <h6>Rooms Layout and Availability:</h6>
+  <div class="master-div">
+    <div class="hotel-div" *ngFor="let floors of floorsSummary">
+      <div class="floor-div">
+        <label class="floor-label">Floor #: {{floors.item1}}</label>
+        <div *ngFor="let rooms of floors.item2">
+          <button [ngClass]="{'room-status-a': rooms.item2 === 'A', 'room-status-o': rooms.item2 === 'O', 'room-status-v': rooms.item2 === 'V', 'room-status-r': rooms.item2 === 'R'}" class=".room-button">{{rooms.item1}}</button>
+        </div>
+      </div>
+    </div>
+    <div class="master-div">
+      <h6>Nearest Room Search:</h6>
+      <div class="floor-div">
+        <button (click)="searchNearestRoom()" class="action-button">Find Nearest Room</button>
+        <label class="result-label">Result: {{this.nearestAvailableRoomResult}} </label>
+      </div>
+    </div>
+    <div class="master-div">
+      <h6>Reserve Room:</h6>
+      <div class="floor-div">
+        <label class="input-label">Enter Room Number</label>
+        <input class="input-field" id="roomInputReserve" type="text" />
+        <button (click)="reserveRoom()" class="input-button">Reserve Room</button>
+        <label class="result-label">Result: {{this.reservedRoomResult}} </label>
+      </div>
+    </div>
+    <div class="master-div">
+      <h6>Checkout Room:</h6>
+      <div class="floor-div">
+        <label class="input-label">Enter Room Number</label>
+        <input class="input-field" id="roomInputCheckout" type="text" />
+        <button (click)="checkoutRoom()" class="input-button">Checkout Room</button>
+        <label class="result-label">Result: {{this.checkoutRoomResult}} </label>
+      </div>
+    </div>
+    <div class="master-div">
+      <h6>Repair Room:</h6>
+      <div class="floor-div">
+        <label class="input-label">Enter Room Number</label>
+        <input class="input-field" id="roomInputRepair" type="text" />
+        <button (click)="repairRoom()" class="input-button">Repair Room</button>
+        <label class="result-label">Result: {{this.repairRoomResult}} </label>
+      </div>
+    </div>
+    <div class="master-div">
+      <h6>Repair Completed Room:</h6>
+      <div class="floor-div">
+        <label class="input-label">Enter Room Number</label>
+        <input class="input-field" id="roomInputRepairCompleted" type="text" />
+        <button (click)="repairCompletedRoom()" class="input-button">Repair Completed Room</button>
+        <label class="result-label">Result: {{this.repairCompletedRoomResult}} </label>
+      </div>
+    </div>
+    <div class="master-div">
+      <h6>Cleaning Completed Room:</h6>
+      <div class="floor-div">
+        <label class="input-label">Enter Room Number</label>
+        <input class="input-field" id="roomInputCleaned" type="text" />
+        <button (click)="cleanedRoom()" class="input-button">Clean Completed Room</button>
+        <label class="result-label">Result: {{this.cleanedRoomResult}} </label>
+      </div>
+    </div>
+  </div>
+</div>
